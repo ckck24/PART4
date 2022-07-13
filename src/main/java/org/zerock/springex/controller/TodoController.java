@@ -151,8 +151,9 @@ public class TodoController {
 
 
     @PostMapping("/modify")
-    public String modify(@Valid TodoDTO todoDTO,
-                         PageRequestDTO pageRequestDTO,
+    public String modify(
+                        PageRequestDTO pageRequestDTO,
+                        @Valid TodoDTO todoDTO,
                          BindingResult bindingResult,
                          RedirectAttributes redirectAttributes){
 
